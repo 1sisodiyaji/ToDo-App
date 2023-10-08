@@ -7,7 +7,7 @@ const todoSchema = new mongoose.Schema(
             required:true,
             maxLength:50,
         },
-        descriptipon :{
+        description:{
             type:String,
             required:true,
             maxlength:200,

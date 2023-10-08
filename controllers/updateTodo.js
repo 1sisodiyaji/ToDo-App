@@ -4,11 +4,11 @@ exports.updateTodo = async(req,res) => {
 
     try {
         const {id} = req.params;
-        const {title,descriptions}= req.body;
+        const {title,description}= req.body;
 
         const todo = await Todo.finfByIdAndUpdate(
             {_id:id},
-            {title,descriptions,updateAt:Date.now()},
+            {title,description,updateAt:Date.now()},
         )
 
         res.status(200).json({

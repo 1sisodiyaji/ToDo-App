@@ -28,7 +28,7 @@ exports.getTodoById = async(req, res) => {
        if(!todo) {
         return res.status(404).json({
             success:false,
-            message:"No Data Found woth Given Id",
+            message:"No Data Found with Given Id",
         })
        }
        res.status(200).json({
